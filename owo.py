@@ -49,7 +49,7 @@ class MyStreamListener(tweepy.StreamListener):
             message = message.replace(":)", "– ̗̀ (ᵕ꒳ᵕ) ̖́ –")
             message = message.replace("Hi ", "Haiii<3 ")
             message = message.replace("you ", "youwu ")
-            api.update_status(twitterhandle +  " Hewwo, " + message, in_reply_to_status_id = status.id)
+            api.update_status("Hewwo, " + message, in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
             print(f"You Replied {message}")
 myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
