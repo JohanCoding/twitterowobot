@@ -5,7 +5,7 @@ api_key = " " #put your keys
 api_secret = " " #put your keys
 coolacesstoken = " " #put your keys
 coolacesssecret = " " #put your keys
-userid = " " #the person you want to reply to twitter id
+userid = " " #the person you want to reply to twitter id (i use this site https://tweeterid.com/)
 twitterhandle = "@____" #Persons twitter handle
 auth = tweepy.OAuthHandler(api_key, api_secret)
 auth.set_access_token(coolacesstoken, coolacesssecret)
